@@ -406,16 +406,16 @@ user4.addPost(post3);
 var printUserInfo = (user: FbUser) => {
   console.log(
     ` User Information:
-          Username is ${user.getUserName()} \n
-          Email is ${user.getEmail()} \n
-          D.O.B. is ${user.getDOB()} \n
-          Gender is ${user.getGender()} \n
-          Join Date of FB is ${user.getJoinDate()} \n
-          List of friends are ${user
+          Username is: ${user.getUserName()} \n
+          Email is: ${user.getEmail()} \n
+          D.O.B. is: ${user.getDOB()} \n
+          Gender is: ${user.getGender()} \n
+          Join Date of FB is: ${user.getJoinDate()} \n
+          List of friends are: ${user
             .getListOfFriends()
             .map((friend, i) => `${friend.getUserName()}`.trim())
             .join(", ")} \n
-          List of Posts are ${user
+          List of Posts are: ${user
             .getListOfPost()
             .map((post, i) => `${post.getTitle()}`.trim())
             .join(", ")} \n
