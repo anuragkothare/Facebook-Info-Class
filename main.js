@@ -224,10 +224,10 @@ user4.addPost(post3);
 // Printing
 // utility function to print information about user
 var printUserInfo = function (user) {
-    console.log(" User Information:\n          Username is " + user.getUserName() + " \n\n          Email is " + user.getEmail() + " \n\n          D.O.B. is " + user.getDOB() + " \n\n          Gender is " + user.getGender() + " \n\n          Join Date of FB is " + user.getJoinDate() + " \n\n          List of friends are " + user
+    console.log(" User Information:\n          Username is: " + user.getUserName() + " \n\n          Email is: " + user.getEmail() + " \n\n          D.O.B. is: " + user.getDOB() + " \n\n          Gender is: " + user.getGender() + " \n\n          Join Date of FB is: " + user.getJoinDate() + " \n\n          List of friends are: " + user
         .getListOfFriends()
         .map(function (friend, i) { return ("" + friend.getUserName()).trim(); })
-        .join(", ") + " \n\n          List of Posts are " + user
+        .join(", ") + " \n\n          List of Posts are: " + user
         .getListOfPost()
         .map(function (post, i) { return ("" + post.getTitle()).trim(); })
         .join(", ") + " \n\n           \n          ");
